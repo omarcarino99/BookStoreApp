@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/book_name_details_list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="Harry Potter"/>
+
+    <TextView
+        android:id="@+id/book_price_details_list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="$15.00"/>
+
+    <TextView
+        android:id="@+id/quantity_list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="15"/>
+
+    <Button
+        android:id="@+id/purchase_button_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:text="@string/buy_button_label"/>
+
+</LinearLayout>

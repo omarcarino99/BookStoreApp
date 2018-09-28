@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/linear_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal"
+    android:clickable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/book_name_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:text="@string/book_name"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/price_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/price"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/quantity_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/quantity"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""/>
+</LinearLayout>

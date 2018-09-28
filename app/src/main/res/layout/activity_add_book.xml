@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bookstoreapp.AddBookActivity">
+
+    <ImageView
+        android:id="@+id/book_image_details"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="51dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <EditText
+        android:id="@+id/book_name_details_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/book_image_details"
+        android:layout_centerHorizontal="true"
+        android:hint="Book Name"/>
+
+    <EditText
+        android:id="@+id/author_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/book_name_details_list"
+        android:layout_below="@+id/book_name_details_list"
+        android:layout_marginTop="10dp"
+        android:hint="Author Name"
+        tools:text="J.K Rowling"/>
+
+    <EditText
+        android:id="@+id/book_quantity_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_image_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="Quantity"
+        tools:text="20"/>
+    <EditText
+        android:id="@+id/book_price_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/book_quantity_details"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/suppliers_number_details"
+        android:inputType="numberDecimal"
+        android:hint="price"
+        tools:text="$10.00"/>
+    <EditText
+        android:id="@+id/suppliers_name_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/suppliers_number_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:hint="Supplier Name"
+        tools:text="Dr. Seus Books"/>
+    <EditText
+        android:id="@+id/suppliers_number_details"
+        android:inputType="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_button"
+        android:layout_alignStart="@+id/suppliers_name_details"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:hint="Supplier Number"
+        tools:text="201-453-4843"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:text="save"/>
+
+
+</RelativeLayout>
